@@ -1,6 +1,8 @@
 package guru.qa;
 
-public class Main {
+import java.util.List;
+
+public class JavaBasicsFirst {
     public static void main(String[] args) {
 
         // Целочисленные типы
@@ -19,8 +21,11 @@ public class Main {
         // Логический тип
         boolean aBoolean = true;
 
-        //Строка
+        //Строка(и бесконечность других объектных/ссылочных типов)
         String toBePrint = "Hello world!";
+        System.out.println(toBePrint);
+
+        List<String> teachers = List.of("Stan", "Dmitri");
 
         class Cup {
             String color = "grey";
@@ -28,6 +33,50 @@ public class Main {
             boolean hasHandle = true;
         }
 
-        System.out.println(toBePrint);
+        //Операторы
+        //Оператор присвоения =
+        String nameFirst = "Dmitri";
+        int age = 34;
+        String nameSecond = "Stan";
+        String nameThird = null;
+        //Арифметический оператор + - / * % ++ --
+        System.out.println(4.0 + 3);
+        System.out.println(4.0 - 3);
+        System.out.println(4.0 / 3);
+        System.out.println(4.0 * 3);
+        System.out.println(4.0 % 3);
+
+//        int result = aInt + 1;
+//        int result = ++aInt; //префиксная запись
+        int result = aInt++; //постфиксная запись
+
+//        int result = aInt - 1;
+//        int result = --aInt;
+        System.out.println(result);
+
+        //Операторы сравнения <, >, >=, <=, !=, ==
+        System.out.println(3 > 2);
+        System.out.println(3 >= 2);
+        System.out.println(3 >= 2);
+        System.out.println(3 != 2);
+        System.out.println(3 == 2);
+
+        System.out.println(nameFirst.equals(nameSecond));
+
+        //Логические операторы &, |, &&, ||, !
+
+        System.out.println(nameFirst.equals("Dmitri") && age == 34);
+
+        if (nameThird != null && nameThird.length() == 5) {
+            System.out.println("Success");
+        }
+
+//        System.out.println(nameFirst.equals("Dmitri") || age == 77);
+
+        //Оператор instanceof
+        System.out.println(nameFirst instanceof String);
+
+
+
     }
 }
