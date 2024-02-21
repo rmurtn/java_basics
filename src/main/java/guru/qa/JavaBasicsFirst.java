@@ -9,18 +9,24 @@ public class Main {
         int aInt = 0; // 32bit (-2^32) .. (+2^32 -1) -14
         long aLong = 0; // 64bit
 
-// Типы с плавающей точкой
+        // Типы с плавающей точкой
         float aFloat = 0.0F;
         double aDouble = 0.0;
 
-// Символьный тип
+        // Символьный тип
         char aChar = 'a';
 
-// Логический тип
+        // Логический тип
         boolean aBoolean = true;
 
-//Строка
+        //Строка
         String toBePrint = "Hello world!";
+
+        class Cup {
+            String color = "grey";
+            int capacity = 250;
+            boolean hasHandle = true;
+        }
 
         System.out.println(toBePrint);
     }
