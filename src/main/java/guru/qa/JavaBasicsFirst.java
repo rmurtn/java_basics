@@ -6,15 +6,15 @@ public class JavaBasicsFirst {
     public static void main(String[] args) {
 
         // Целочисленные типы
-        byte aByte = 0; // 8bit -128 +127
-        short aShort = 0; // 16bit -32768 +32767
+        byte aByte = 0; // 8bit -128 +127 (-2^(8-1)) .. (+2^(8-1))-1
+        short aShort = 0; // 16bit -32768 +32767 (-2^(16-1)) .. (+2^(16-1))-1
         int aInt = 0; // 32bit (-2^(32-1)) .. (+2^(32-1))-1 -14
         Integer intWrapper = 0;
-        long aLong = 0; // 64bit
+        long aLong = 0; // 64bit (-9 * 10^18) .. (9 * 10^18)
 
         // Типы с плавающей точкой
-        float aFloat = 0.0F;
-        double aDouble = 0.0;
+        float aFloat = 0.0F; // 32bit
+        double aDouble = 0.0; // 64bit
         Double doubleWrapper = 9.1;
         // Символьный тип
         char aChar = 'a';
@@ -97,7 +97,7 @@ public class JavaBasicsFirst {
         //ключевое слово new
 
         String name = new String("Alex");
-        String name = "Alex";
+//        String name = "Alex";
 
 
     }
