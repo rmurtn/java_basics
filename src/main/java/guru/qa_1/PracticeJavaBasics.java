@@ -1,4 +1,4 @@
-package guru.qa;
+package guru.qa_1;
 
 public class PracticeJavaBasics {
     public static void main(String[] args) {

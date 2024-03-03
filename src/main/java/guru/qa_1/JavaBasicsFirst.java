@@ -1,4 +1,4 @@
-package guru.qa;
+package guru.qa_1;
 
 import java.util.List;
 
